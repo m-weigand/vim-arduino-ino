@@ -2,7 +2,7 @@
 
 echo "use Ctrl-a, k to exit the screen utility"
 
-port=$(ls /dev/tty.* | grep usb)
+port=$(ls /dev/ttyACM0)
 
 osascript -e \
   "tell application \"iTerm\"
